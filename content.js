@@ -1,5 +1,5 @@
 (function () {
-  const speeds = [1, 1.25, 1.5, 1.75, 2, 2.5, 3];
+  const speeds = [1, 1.25, 1.5, 1.75, 2, 2.5, 3, 4]; // Added 4x speed
   let buttonsContainer;
 
   function createSpeedButtons() {
@@ -17,19 +17,19 @@
     buttonsContainer.style.zIndex = '9999';
     buttonsContainer.style.display = 'flex';
     buttonsContainer.style.flexDirection = 'row';
+
     // Create buttons for each speed
     speeds.forEach(speed => {
       const button = document.createElement('button');
       button.textContent = `${speed}x`;
-      button.style.margin = '2px';
-      button.style.padding = '5px';
-      button.style.fontSize = '14px';
+      button.style.margin = '1px';
+      button.style.padding = '1px 3px'; // Even smaller padding
+      button.style.fontSize = '11px'; // Smaller font size
       button.style.backgroundColor = '#ffffffcc';
       button.style.border = '1px solid #ccc';
-      button.style.borderRadius = '4px';
+      button.style.borderRadius = '3px';
       button.style.cursor = 'pointer';
-      button.style.width = '48px';
-      button.style.margin = '2px';
+      button.style.width = '35px'; // Smaller width
 
       // Set the video playback speed when clicked
       button.addEventListener('click', () => {
@@ -38,6 +38,7 @@
           video.playbackRate = speed;
         }
       });
+
       buttonsContainer.appendChild(button);
     });
 
