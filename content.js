@@ -12,9 +12,9 @@
     // Create a container for the buttons
     buttonsContainer = document.createElement('div');
     buttonsContainer.style.position = 'absolute';
-    buttonsContainer.style.top = '-4px';
-    buttonsContainer.style.right = '0px';
-    buttonsContainer.style.zIndex = '9999';
+    buttonsContainer.style.top = '-20px';
+    buttonsContainer.style.right = '-200px'; // Shifted bar right to avoid overlapping video title
+    buttonsContainer.style.zIndex = '999'; // Lowered z-index (9999 → 999) to keep speed bar below popups
     buttonsContainer.style.display = 'flex';
     buttonsContainer.style.flexDirection = 'row';
 
