@@ -1,5 +1,5 @@
 (function () {
-  const speeds = [1, 1.25, 1.5, 1.75, 2, 2.5, 3, 4]; // Added 4x speed
+  const speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 3, 4];
   let buttonsContainer;
 
   function createSpeedButtons() {
