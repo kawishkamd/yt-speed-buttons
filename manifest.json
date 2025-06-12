@@ -3,6 +3,10 @@
   "name": "YouTube Speed Buttons",
   "version": "1.0",
   "description": "Adds speed control buttons to YouTube videos.",
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
